@@ -1,0 +1,136 @@
+/* ------------------ GENERIC ------------------ */
+:root {
+  --green-dark: #1f4529;
+  --green-light: #e8ecd7;
+  --grey-text: #2c3e50;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--grey-text);
+}
+
+/* ------------------ HEADER & NAV ------------------ */
+header {
+  background: var(--green-dark);
+}
+
+nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid var(--green-dark);
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-family: "Courier New", monospace;
+  font-weight: 800;
+  font-size: 34px;
+  color: var(--green-light);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  bottom: -6px;
+  left: 0;
+  background: var(--green-light);
+  transition: width 0.25s ease;
+}
+
+.menu a:hover::after,
+.menu a:focus::after {
+  width: 100%;
+}
+
+/* ------------------ MAIN CONTENT ------------------ */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.content-section {
+  padding: 40px 0;
+  border-bottom: 2px solid var(--green-light);
+}
+
+.content-section:last-of-type {
+  border-bottom: none;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+  color: var(--grey-text);
+}
+
+p {
+  text-align: justify;
+  text-indent: 1.5em;
+  margin: 0 0 1.2em;
+}
+
+ul {
+  margin: 0 0 1.2em 1.2em;
+  padding: 0;
+}
+
+.bullets-two-column {
+  column-count: 2;
+  column-gap: 40px;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 700px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 12px;
+  }
+
+  .bullets-two-column {
+    column-count: 1;
+  }
+}

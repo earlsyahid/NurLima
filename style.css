@@ -1,0 +1,235 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #E8ECD7;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background: #1F4529;
+    z-index: 1;
+    border-bottom:1px solid #1F4529;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #1F4529;
+}
+
+h2 {
+   font-family: 'comic sans ms';
+   font-weight: 800;
+   font-size: 45px;
+   margin-bottom: 20px;
+   color: #1F4529;
+   width: 100%;
+   line-height: 90%; 
+}
+
+a.tbl-green {
+    background: #47663B;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color:#FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-green:hover {
+    background: #1F4529;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.profil-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-profil {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-profil img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.kartu-profil p {
+    font-family: comic sans ms;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color:#1F4529;
+}
+
+#contact {
+    background: #E8ECD7;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.footer-section:nth-child(3) p {
+    margin: 5px 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+h3 {
+    font-family:'comic sans ms';
+    font-weight: 800;
+    font-size:30px;
+    margin-bottom: 20px;
+    color:#1F4529;
+    line-height: 50px   ;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 991.98px){
+    .wrapper{
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.menu{
+        width: 100%;
+        margin: 0;
+    }
+
+    nav.menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Sesuaikan dengan tinggi nav */
+}
+
+section img {
+    max-width: 500px; /* Batas maksimum lebar gambar */
+    width: 100%;      /* Responsif: mengikuti ukuran parent */
+    height: auto;     /* Menjaga proporsi */
+    object-fit: contain;
+    margin: auto;     /* Tengahin gambar */
+}
+

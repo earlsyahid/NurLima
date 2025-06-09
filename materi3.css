@@ -1,0 +1,175 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+/* Logo */
+.logo a {
+    font-family: courier, monospace;
+    font-size: 50px;
+    font-weight: 800;
+    color: #E8ECD7;
+    float: left;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    background: #1F4529;
+    position: sticky;
+    top: 0;
+    line-height: 80px;
+    z-index: 1;
+    border-bottom: 1px solid #1F4529;
+    display: flex;
+    margin: auto;
+}
+
+.menu {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 0 16px;
+    text-align: center;
+    display: block;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content column */
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 20px;
+    color: #1F4529;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1F4529;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #1F4529;
+}
+
+/* Paragraphs */
+p {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Buttons (if needed) */
+a.tbl-green {
+    background: #47663B;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+a.tbl-green:hover {
+    background: #1F4529;
+    text-decoration: none;
+}
+
+/* Footer */
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+#copyright .wrapper {
+    font-weight: 600;
+    color: #1F4529;
+}
+
+/* Responsive */
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    .kolom {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Scroll behavior */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* untuk jarak navbar */
+}
